@@ -1,0 +1,497 @@
+
+/*
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    color: black;
+    font-family: arial,sans-serif;
+    font-size: 13px;
+}
+*/
+div#contentmap{
+
+bottom:0;
+top:0px;
+left: 0;
+right: 0;
+float:right;
+padding:0px;
+margin:90px auto 10px auto;
+position:absolute;
+width:98%;
+height:100%;
+	
+	height:auto;
+	height:80%; /* IE6: treaded as min-height*/
+	min-height:80%; /* real browsers */
+}
+
+#panel-busqueda {
+width:98%;
+float:left;
+overflow: auto;
+font-size: 10pt;
+font-weight: normal;
+padding:10px;
+height:30px;
+}
+ 
+ 
+#map {
+
+margin:0 auto;
+height:90%;
+	height:auto;
+	height:90%; /* IE6: treaded as min-height*/
+	min-height:90%; /* real browsers */
+
+}
+
+#panel-wpr {
+position : relative;
+/*border-left: 1px solid #e6e6e6;*/
+top: 0px;
+bottom: 0;
+left:0;
+right:0;
+width:28%;
+float:left;
+clear:left;
+overflow: auto;
+
+}
+
+.labelDir 
+{
+    font-size: 1em;
+    font-weight: bold;
+    
+}
+
+.button {
+    border: 1px solid #D9D9D9;
+    min-width: 100px;
+    text-align: center;
+    font-weight: bold;
+    margin:0; 
+    padding:2px;
+}
+
+
+
+
+#traffic {
+    border: 1px solid #666666;
+    display: inline-block;
+    min-width: 114px;
+    text-align: center;
+    font-weight: bold;
+    padding: 0px 6px 1px 6px;
+    height: 20px;
+    background-color: white;
+    margin:0px;
+    font-size: 13px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    }
+
+
+
+
+#address {
+    background-color: white;
+    border: 1px solid #D9D9D9;
+    border-top: 1px solid silver;
+    width:250px;
+    font-size: 1em;
+}
+#panel {
+    font-family: arial;
+    padding: 0 5px;
+font-size: 10px;
+}
+
+#info {
+    padding: 5px;
+}
+#info div {
+    line-height: 22px;
+    font-size: 1em;
+    /*font-size: 110%;*/
+    }
+
+#info-busqueda {
+    padding: 5px;
+}
+#info-busqueda div {
+    line-height: 22px;
+    font-size: 1em;
+    /*font-size: 110%;*/
+    }
+    
+
+.input {
+    background-color: white;
+    padding-left: 8px;
+    border: 1px solid #D9D9D9;
+    border-top: 1px solid silver;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    
+}
+
+.time {
+margin: 0;
+height: 17px;
+border: 1px solid;
+border-top-color: #CCC;
+border-right-color: #999;
+border-left-color: #999;
+border-bottom-color: #CCC;
+padding: 2px 15px 1px 1px;
+}
+
+
+/*
+.button {
+        border: 1px solid #D9D9D9;
+        display: inline-block;
+    min-width: 114px;
+    text-align: center;
+    font-weight: bold;
+    padding: 0 8px;
+    line-height: 27px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-transition: all 0.218s;
+    -moz-transition: all 0.218s;
+    -o-transition: all 0.218s;
+    transition: all 0.218s;
+    background-image: linear-gradient(top,#4D90FE, #4787ED);
+}*/
+     
+
+.botonLogin {
+        border: 1px solid #D9D9D9;
+        display: inline-block;
+    min-width: 114px;
+    text-align: center;
+    font-weight: bold;
+    padding: 0 1px;
+    line-height: 20px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    background-image: linear-gradient(top,#4D90FE, #4787ED);
+}
+#txtOrigen {
+    background-color: white;
+    border: 1px solid #D9D9D9;
+    border-top: 1px solid silver;
+    width: 95%;
+    font-size: 0.8em;
+}
+      
+#txtDestino {
+    background-color: white;
+    border: 1px solid #D9D9D9;
+    border-top: 1px solid silver;
+    width: 95%;
+    font-size: 0.8em;
+}
+#traffic-wpr
+{
+    padding-top:5px;
+}
+.btn 
+{
+    float: right;
+    text-align : right;
+}
+
+h2 {
+    margin: 0;
+    padding:0;
+}
+
+
+#toggleButton
+{
+    height: 20px;
+    width: 40px;
+    background-color: Red;
+    float: right;
+    margin: 10px;
+    cursor: pointer;
+}
+#toggleBtn
+{    
+    float: right;
+    margin: 10px;
+    padding: 5px;
+}?
+	.container0
+	{
+	  padding: 5px 5px 5px 5px;
+	  text-align: left;
+	  width: 270px;
+	  height: 30px;
+	}
+	.container{
+	  width: 260px; 
+	  z-index: 1; 
+	  margin: 0;
+	  cursor: pointer;
+	  text-align: left;
+	  z-index: 0;
+	  padding: 5px;
+	}
+
+	.dropDownControl{
+		direction: ltr; 
+		overflow-x: hidden; 
+		overflow-y: hidden; 
+		text-align: left; 
+		position: relative; 
+		font-family: Arial, sans-serif; 
+		-webkit-user-select: none; 
+		font-size: 13px; 
+		padding-top: 1px; 
+		padding-right: 6px; 
+		padding-bottom: 1px; 
+		border-top-width: 1px; 
+		border-right-width: 1px; 
+		border-bottom-width: 1px; 
+		border-left-width: 1px; 
+		border-top-style: solid; 
+		border-right-style: solid; 
+		border-bottom-style: solid; 
+		border-left-style: solid; 
+		border-top-color: rgb(113, 123, 135); 
+		border-right-color: rgb(113, 123, 135); 
+		border-bottom-color: rgb(113, 123, 135); 
+		border-left-color: rgb(113, 123, 135); 
+		border-image: initial; 
+		-webkit-box-shadow: rgba(0, 0, 0, 0.398438) 0px 2px 4px; 
+		box-shadow: rgba(0, 0, 0, 0.398438) 0px 2px 4px; 
+		color: rgb(0, 0, 0); 
+		padding-left: 6px; 
+		font-weight: bold; 
+		background-image: initial; 
+		background-attachment: initial; 
+		background-origin: initial; 
+		background-clip: initial; 
+		background-color: rgb(255, 255, 255); 
+		background-position: initial initial; 
+		background-repeat: initial initial; 	
+		z-index: 2;
+		width:250px;
+	}	
+
+	.dropDownControlCapas{
+		direction: ltr; 
+		overflow-x: hidden; 
+		overflow-y: hidden; 
+		text-align: left; 
+		position: relative; 
+		font-family: Arial, sans-serif; 
+		-webkit-user-select: none; 
+		font-size: 13px; 
+		padding-top: 1px; 
+		padding-right: 6px; 
+		padding-bottom: 1px; 
+		border-top-width: 1px; 
+		border-right-width: 1px; 
+		border-bottom-width: 1px; 
+		border-left-width: 1px; 
+		border-top-style: solid; 
+		border-right-style: solid; 
+		border-bottom-style: solid; 
+		border-left-style: solid; 
+		border-top-color: rgb(113, 123, 135); 
+		border-right-color: rgb(113, 123, 135); 
+		border-bottom-color: rgb(113, 123, 135); 
+		border-left-color: rgb(113, 123, 135); 
+		border-image: initial; 
+		-webkit-box-shadow: rgba(0, 0, 0, 0.398438) 0px 2px 4px; 
+		box-shadow: rgba(0, 0, 0, 0.398438) 0px 2px 4px; 
+		color: rgb(0, 0, 0); 
+		padding-left: 6px; 
+		font-weight: bold; 
+		background-image: initial; 
+		background-attachment: initial; 
+		background-origin: initial; 
+		background-clip: initial; 
+		background-color: rgb(255, 255, 255); 
+		background-position: initial initial; 
+		background-repeat: initial initial; 	
+		z-index: 2;
+		width:250px;
+	}	
+	
+	.dropDownArrow{
+		-webkit-user-select: none; 
+		border-width: 0px; 
+		border-style: initial; 
+		border-color: initial; 
+		border-image: initial; 
+		padding: 0px; 
+		margin-right: 0px; 
+		margin-bottom: 0px; 
+		margin-left: 0px; 
+ 		position: absolute; 
+		right: 6px; 
+		top: 50%;
+		margin-top: -2px; 
+		width: 7px; 
+		height: 4px; 
+	}
+	
+	.dropDownOptionsDiv{
+		background-color: white; 
+		z-index: 0; /*need this to make the box look cool, but this stops the hover and title from working on items in the box! */ 
+		padding-top: 2px; 
+		border-right-width: 1px; 
+		border-bottom-width: 1px; 
+		border-left-width: 1px; 
+		border-right-style: solid; 
+		border-bottom-style: solid; 
+		border-left-style: solid; 
+		border-right-color: rgb(113, 123, 135); 
+		border-bottom-color: rgb(113, 123, 135); 
+		border-left-color: rgb(113, 123, 135); 
+		border-image: initial; 
+		border-top-width: 0px; 
+		border-top-style: initial; 
+		border-top-color: initial; 
+		-webkit-box-shadow: rgba(0, 0, 0, 0.398438) 0px 2px 4px; 
+		box-shadow: rgba(0, 0, 0, 0.398438) 0px 2px 4px; 
+		position: relative; 
+		text-align: left; 
+		display: none;
+	}
+	
+	.dropDownItemDiv{
+		font-family: Arial, sans-serif; 
+		-webkit-user-select: none; 
+		font-size: 13px; 
+		padding-top: 2px; 
+		padding-right: 5px; 
+		padding-bottom: 3px; 
+		padding-left: 5px; 
+		background-color: rgb(255, 255, 255); 
+		color: black; 
+		/*font-weight: bold;*/		
+	}
+	.dropDownItemDiv:hover, .checkboxContainer:hover{
+		background-color: rgb(235, 235, 235);				
+	}
+	.dropDownControl:hover, .button:hover{
+		background: -webkit-linear-gradient(top,rgb(255,255,255),rgb(230,230,230));
+	}
+	.separatorDiv{
+		margin-top: 1px; 
+		margin-right: 0px; 
+		margin-bottom: 1px; 
+		margin-left: 0px; 
+		border-top-width: 1px; 
+		border-top-style: solid; 
+		border-top-color: rgb(235, 235, 235); 
+	}
+	.checkboxContainer{
+		font-family: Arial, sans-serif; 
+		-webkit-user-select: none; 
+		font-size: 11px; 
+		padding-top: 1px; 
+		padding-bottom: 3px; 
+		padding-left: 5px; 
+		direction: ltr; 
+		text-align: left; 
+		background-color: rgb(255, 255, 255); 
+		white-space: nowrap; 
+		padding-right: 8px; 
+		color: rgb(0, 0, 0); 
+	}		
+	.checkboxSpan{
+		box-sizing: border-box; 
+		position: relative; 
+		line-height: 0; 
+		font-size: 0px; 
+		margin-top: 0px; 
+		margin-right: 5px; 
+		margin-bottom: 0px; 
+		margin-left: 0px; 
+		display: inline-block; 
+		background-color: rgb(255, 255, 255); 
+		border-width: 1px; 
+		border-style: solid; 
+		border-color: initial; 
+		border-image: initial; 
+		border-top-left-radius: 1px; 
+		border-top-right-radius: 1px; 
+		border-bottom-right-radius: 1px; 
+		border-bottom-left-radius: 1px; 
+		width: 13px; 
+		height: 13px; 
+		vertical-align: middle; 
+		-webkit-box-shadow: none; 
+		box-shadow: none; 
+		border-color: rgb(198, 198, 198); 		
+	}
+
+	
+	.blankDiv{
+		position: absolute; 
+		left: 1px; 
+		top: -2px; 
+		width: 13px; 
+		height: 11px; 
+		overflow-x: hidden; 
+		overflow-y: hidden; 
+		display: none; /*when = block -> this is the "check" symbol*/ 
+	}
+		
+	.blankImg{
+		position: absolute; 
+		left: -52px; 
+		top: -44px; 
+		-webkit-user-select: none; 
+		border-width: 0px; 
+		border-style: initial; 
+		border-color: initial; 
+		border-image: initial; 
+		padding: 0px; 
+		margin: 0px; 
+		-webkit-user-drag: none; 
+		width: 68px; 
+		height: 67px; 
+	}
+	
+	.checkboxLabel{
+		vertical-align: middle; 
+		cursor: pointer;
+	}
+      .button{
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        text-align: center;
+        position: relative;
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+		font-weight:bold;
+        box-shadow: rgba(0, 0, 0, 0.4) 0 2px 4px;
+        -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 2px 4px;
+        -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 2px 4px;
+        color: #000;
+        border: 1px solid #717B87;
+        background-color: #fff; 
+        margin: 5px;
+        padding: 1px 6px;
+        overflow: hidden;
+      }    
+
+      .button-selected {
+        font-weight: bold;
+      }
